@@ -1,0 +1,65 @@
+.card
+    border: none
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15)
+    height: 360px
+    & p
+        color: $gray
+        line-height: 25px
+    & img
+        width: 100%
+        transition: all ease-in-out 0.3s
+        transform: scale(1.1)
+    & img:hover
+        transform: scale(1)
+    &_image
+        overflow: hidden
+        position: relative
+        border-radius: 3px
+    &:hover
+        cursor: pointer
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+        transition: all ease-in-out 0.5s
+    &_body
+        padding: 20px
+    &_avatar
+        position: absolute
+        border-radius: 50%
+        width: 100px
+        height: 100px
+        overflow: hidden
+        left: calc(50% - 50px)
+        top: -50px
+    &_title a
+        color: $gray
+        font-weight: bold
+        transition: all ease-in-out 0.5s
+    &_role
+        font-size: 14px
+        font-weight: 300
+        position: relative
+        width: 100%
+        padding-bottom: 20px
+        margin-bottom: 20px
+    &_role:after
+        position: absolute
+        content: ""
+        width: 30px
+        height: 1px
+        background: $greenLight
+        left: calc(50% - 15px)
+        bottom: 0
+    &_about 
+        font-size: 15px
+        font-weight: 300
+        line-height: 25px
+        position: relative
+        width: 100%
+    &_name
+        font-size: 28px
+        font-weight: 100
+        color: #2a2a2a
+        padding-top: 60px
+    &_footer
+        width: 100%
+        padding: .75rem 1.25rem
+        

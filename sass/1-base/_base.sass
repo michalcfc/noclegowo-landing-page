@@ -1,0 +1,247 @@
+// ---------------------------------------------
+    // Basics
+// ---------------------------------------------
+  
+*, *:before, *:after
+  margin: 0
+  padding: 0
+  border: 0
+  box-sizing: border-box
+  outline: none
+
+#wrapper
+  position: absolute
+  width: 100%
+  overflow-x: hidden
+a
+  color: $river
+a, a:hover 
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6 
+  margin-top: 0
+  font-weight: 300
+
+h1
+  font-size: 38px
+
+h3
+  font-size: 24px
+
+p
+  color: $gray
+  line-height: 24px
+  margin: 0 0 15px
+  font-weight: 300
+
+img
+  vertical-align: middle
+
+body
+  color: $gray
+  font-family: Roboto,Helvetica Neue,sans-serif !important
+  font-weight: 300
+  line-height: 1.7
+  font-size: 16px
+  position: relative
+  margin: 0
+  overflow-x: hidden
+
+
+ul, ol, li
+  list-style: none
+  color: #fff
+  padding: 0
+
+table
+  width: 100%
+  text-align: center
+
+header
+  z-index: 99
+
+
+/* Hide the browser's default checkbox
+
+.form-check
+  display: block
+  position: relative
+  margin: 24px 0
+  cursor: pointer
+  font-size: 22px
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.form-check input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.form-check input:checked + .checkmark
+  display: block
+  border: 1px solid $greenLight
+  background: $white
+  color: $black
+.form-check input:checked + .checkmark:after
+  display: block
+
+.checkmark:after
+  left: 8px
+  top: 6px
+  width: 5px
+  height: 10px
+  border: solid $greenLight
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+  
+
+// .checkmark:hover
+//   background-color: $grayLight
+
+.checkmark
+  position: absolute
+  top: 0
+  height: 24px
+  width: 24px
+  border: 1px solid $grayLight
+
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+  
+// ---------------------------------------------
+    // Helpers
+// ---------------------------------------------
+
+  
+.padding-30
+  padding-top: 30px
+
+.relative
+  position: relative
+
+.absolute
+  position: absolute
+
+.clearfix
+  clear: both
+
+.flexible
+  display: flex
+
+.row 
+  align-items: center
+
+.pull-left
+  margin-left: 25px
+
+.pull-right
+  margin-right: 25px
+
+.float-left
+  float: left
+
+.float-right
+  float: right
+
+.absolute
+  position: absolute
+
+.text-center
+  text-align: center
+
+.align-items-center
+  align-items: center !important
+
+.text-uppercase
+  text-transform: uppercase !important
+
+.border-bottom
+  border-bottom: 1px solid #e5e5e5
+  
+.no-align-items
+  align-items: normal !important
+
+// ---------------------------------------------
+    // Sections
+// ---------------------------------------------
+
+.general, .plan, .knowledge, .faq, .guide, .commercial, .category, .testimonials, .about, .stats
+  padding: 90px 0
+  +respond-to(handheld)
+    padding: 60px 0
+
+.footer
+  padding-top: 90px
+  
+section .section
+  width: 100%
+  margin: 0 auto
+
+.section_title 
+  text-align: center
+  padding: 20px
+  line-height: 1.5
+  margin-bottom: 40px
+  position: relative
+  & h2
+    margin-bottom: 24px
+    font-size: 38px
+  & p
+    font-size: 16px
+    line-height: 24px
+    color: $gray
+    margin-bottom: 0
+    max-width: 570px
+    margin: auto
+  &:after
+    width: 64px
+    height: 1px
+    background: lighten($grayLight, 40%)
+    margin-left: -32px
+    bottom: 0px
+    left: 50%
+    content: ""
+    position: absolute
+
+
+  // ---------------------------------------------
+    // Icons
+// ---------------------------------------------
+
+.multi-item-carousel
+  overflow: hidden
+
+.multi-item-carousel .carousel-control-prev,
+.multi-item-carousel .carousel-control-next
+  // background: #ddd
+  width: 5%
+
+.multi-item-carousel .carousel-inner
+  width: 140%
+  left: 0%
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next
+  transform: translateX(75%)
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev
+  transform: translateX(-75%)
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left
+  transform: translateX(0)
+
+.item__third
+  float: left
+  width: 46%
+  margin: 30px 8px

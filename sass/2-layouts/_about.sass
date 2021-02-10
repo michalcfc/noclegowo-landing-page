@@ -1,0 +1,22 @@
+.about 
+    & p
+        line-height: 1.4em
+    & span
+        line-height: 1.75em
+    & svg
+        color: $river
+        font-size: 48px
+        display: block
+        margin: auto
+    &_single
+        padding: 40px
+    &_body
+        +respond-to(handheld)
+            padding-bottom: 40px
+    & .col-md-4:last-child .about_body:last-child
+        +respond-to(handheld)
+            padding-bottom: 0
+    &_title 
+        font-size: 18px
+        font-weight: 600
+        margin: 20px 0

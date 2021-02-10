@@ -1,0 +1,119 @@
+
+.navbar img 
+    +respond-to(handheld)
+        height: 50px
+
+.navbar-dark 
+    .showAdd
+        display: none
+    .navbar-nav .nav-link
+        font-size: 14px
+        line-height: 2
+        text-transform: capitalize
+        color: #fff
+        vertical-align: middle
+        letter-spacing: 0.03125rem
+        position: relative
+        +respond-to(handheld)
+            font-size: 16px
+            color: $gray !important
+    & i
+        +respond-to(handheld)
+            display: none
+
+.nav-link
+    padding: 0
+
+.nav-item a
+    position: relative
+    color: $black
+    text-decoration: none
+
+.nav-item a:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 1px
+    bottom: 0
+    left: 0
+    background-color: #fff
+    visibility: hidden
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transition: all 0.3s ease-in-out 0s
+    transition: all 0.3s ease-in-out 0s
+
+.nav-item a:hover:before
+    visibility: visible
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+
+.nav-item
+    margin: 0 14px
+    +respond-to(handheld)
+        padding: 12px
+
+.navbar-collapse
+    background: none
+    +respond-to(handheld)
+        background: $white
+       
+
+.scrolled 
+    .nav-link
+        color: $gray !important
+        &:hover
+            color: $greenLight !important
+        &:hover:before
+            visibility: visible
+            -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+    .nav-item a:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 1px
+        bottom: 0
+        left: 0
+        background-color: $greenLight
+        visibility: hidden
+        -webkit-transform: scaleX(0)
+        transform: scaleX(0)
+        -webkit-transition: all 0.3s ease-in-out 0s
+        transition: all 0.3s ease-in-out 0s
+    .btn-white
+        border: 1px solid $greenLight
+        color: $white !important
+        background: $greenLight
+        &:hover
+            color: $white !important
+    .showAdd
+        display: inline-block
+
+.scrolled
+    position: fixed
+    top: 0
+    width: 100%
+    left: 0
+    z-index: 99
+    height: 66px
+    background: rgba(255,255,255,0.98)
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2)
+    +respond-to(handheld)
+        display: none
+
+.popup
+    position: relative
+    color: $gray
+    &:hover:before
+        position: absolute
+        top: 50px
+        // white-space: nowrap
+        color: $gray
+        text-transform: none
+        content: "Pomoc telefoniczna jest dostępna od poniedziałku do piątku w godzinach 10:00 - 16:00."
+        width: 300px
+        background: #fff
+        border-radius: 2px
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12)
+        padding: 16px

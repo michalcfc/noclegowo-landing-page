@@ -1,0 +1,24 @@
+.stats
+    & img
+        display: block
+        margin: 0 auto
+        padding: 20px
+        width: 100%
+        max-width: 420px
+        animation-name: fadeInDown
+    & svg
+        color: $river
+        font-size: 48px
+        display: block
+        margin: auto
+    &_number
+        font-size: 60px
+        line-height: 64px
+        margin: 20px 0
+    &_content   
+        padding: 0
+        +respond-to(handheld)
+            padding-bottom: 40px
+    & .col-md-3:last-child .stats_content:last-child
+        +respond-to(handheld)
+            padding-bottom: 0

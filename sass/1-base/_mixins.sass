@@ -1,0 +1,54 @@
+=button-bg($bg)
+  background: $bg
+
+=background-size($size)
+  background-size: $size !important
+  -webkit-background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+=transform($transform)
+  -webkit-transform: translateY($transform)
+  -moz-transform: translateY($transformm)
+  -ms-transform: translateY($transform)
+  -o-transform: translateY($transform)
+  transform: translateY($transform)
+
+=respond-to($device)
+  @if $device == handheld
+    @media only screen and (max-width: 600px)
+      @content
+      
+  @if $device == tablet
+    @media only screen and (min-width : 600px)
+      @content
+  
+  @if $device == tablet-landscape
+    @media only screen and (min-width : 600px) and (orientation : landscape)
+      @content
+
+  @if $device == tablet-portrait
+    @media only screen and (min-width : 600px) and (orientation : portrait)
+      @content
+
+  @if $device == tablet-large
+    @media only screen and (min-width : 768px)
+      @content
+
+  @if $device == desktop
+    @media only screen and (min-width : 1024px)
+      @content
+
+  @if $device == desktop-large
+    @media only screen and (min-width : 1824px)
+      @content
+
+  @if $device == retina-display
+    @media only screen and (-webkit-min-device-pixel-ratio: 2)
+      @content

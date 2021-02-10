@@ -1,0 +1,75 @@
+.testimonial_single
+    padding: 0 90px
+    position: relative
+    +respond-to(handheld)
+        padding: 0 40px
+.fa-star:before
+    content: "\f005"
+
+.testimonial_stars svg
+    color: $river
+    margin-top: 12px
+    font-size: 14px
+    
+.testimonial_avatar
+    width: 120px
+    height: 120px
+    margin-bottom: 20px
+    border-radius: 50%
+    position: relative
+blockquote
+    font-size: 16px
+    text-align: center
+    min-height: 140px
+    & p
+        font-style: italic
+        font-size: 24px
+        line-height: 1.4
+        position: relative
+        margin: 10px 0
+    &:before
+        content: "“"
+        color: lighten($river, 46%)
+        text-align: center
+        position: absolute
+        top: 62%
+        left: 10%
+        font: 700 210px/20px Georgia, serif
+
+
+.carousel-indicators 
+    position: static
+    padding: 10px
+    & li
+        background: lighten($grayLight, 40%)
+        width: 8px
+        height: 8px
+        border-radius: 100%
+        display: inline-block
+    & .active
+        background: $river
+
+.owl-prev, .owl-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    & span
+        border: 1px solid $gray
+        border-width: 0 1px 1px 0
+        display: inline-block
+        padding: 8px
+        margin: 10px
+
+.owl-prev
+    left: 0
+
+.owl-next
+    right: 0
+
+.right    
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+
+.left 
+    transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
